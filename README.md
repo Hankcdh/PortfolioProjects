@@ -1,9 +1,22 @@
 # PortfolioProjects
 
+## Excel 
+
+- ### Badminton BWF Analysis
+    
 
 ## SQL  <img src="https://user-images.githubusercontent.com/41959809/133951568-01ce1f5d-0ef7-47fb-917a-6fc0bfabd351.png" alt="drawing" width="50"/>
 
+Data Source: Kaggle datasets , credit from official BWF datasets 
 
+Datasets Description 
+- contains all BWF tour 2018 ~ 2021 tournament 
+- there are 4 csv files separated by discipline : MD , MS , WS, WS , XD 
+
+Goal:
+- Does having the higher consecutive points wins the match or effect will it have on the score ?
+- Does different country have different player style that can be reflected by scores/ match sets ?
+- Do players play better in their own national tournament ?
 
 
 - ### Housing Projects
