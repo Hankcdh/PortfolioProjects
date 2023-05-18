@@ -1,6 +1,6 @@
 # PortfolioProjects
 
-## Microsoft Excel / Power BI 
+## Microsoft Excel / Power BI  <img src="https://i0.wp.com/hsndigitally.com/wp-content/uploads/2022/08/can-power-bi-replace-excel.png" alt="drawing" width="50"/>
 
 ### Badminton BWF Analysis
 
