@@ -1,6 +1,6 @@
 # PortfolioProjects
 
-## Excel 
+## Microsoft Excel / Power BI 
 
 - ### Badminton BWF Analysis
     
