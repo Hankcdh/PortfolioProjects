@@ -4,7 +4,19 @@
 
 ### Retail Sales Data model and Dashboard
 
+Data Source: Youtube Tuorial , credit from Pragmatic Work 
 
+Dataset Description
+- One large CSV files contains a online retail sales transaction 
+- Data Years : 2015 - 2019
+- NO Data model is applied 
+
+
+Goal
+- Apply a Data model for a dynamic data analysis 
+- Create Dashboard to answer the following questions
+    - what country is doing the best sales across 2016-2018
+    - continue.....
 ### Badminton BWF Analysis
 
 Data Source: Kaggle datasets , credit from official BWF datasets 
