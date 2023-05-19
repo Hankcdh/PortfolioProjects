@@ -2,6 +2,9 @@
 
 ## Microsoft Excel / Power BI  <img src="https://i0.wp.com/hsndigitally.com/wp-content/uploads/2022/08/can-power-bi-replace-excel.png" alt="drawing" width="50"/>
 
+### Retail Sales Data model and Dashboard
+
+
 ### Badminton BWF Analysis
 
 Data Source: Kaggle datasets , credit from official BWF datasets 
