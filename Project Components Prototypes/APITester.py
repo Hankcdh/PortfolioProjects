@@ -5,8 +5,7 @@ import json
 
 
 
-# url = 'https://fakestoreapi.com/products'
-test_url = "https://my.api.mockaroo.com/sales_api___stage_1_.json?key=444e9ff0" 
+
 
 def print_json_response(response):
     """
@@ -83,5 +82,3 @@ def Get_API_Data(url):
     except Exception as err:
         print(err)
 
-
-Get_API_Data(test_url)

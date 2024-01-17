@@ -150,24 +150,3 @@ def ingest_data_into_DB(df_data , postsql_con_config, table_name):
         # close the cursor object to avoid memory leaks
 
         # close the connection object also
-
-
-#### Main Test 
-print("Testing API calls..")
-test_url = "https://my.api.mockaroo.com/testschema.json?key=444e9ff0" 
-data = Get_API_Data(test_url)
-
-print("Testing API Completed")
-print("Testing stage_data_into_pandas..")
-df = stage_data_into_pandas(data)
-print(df)
-print("stage_data_into_pandas Completed")
-
-#Test Ingestion
-postsql_con_config = {"DB_NAME" : "sit_db",
-                     "DB_USER" : "test_user1",
-                     "DB_PASS" : "test456",
-                     "DB_HOST" : "localhost",
-                     "DB_PORT" : "5433" }
-table_name = "mock_users"
-ingest_data_into_DB(df,postsql_con_config ,table_name)
