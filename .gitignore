@@ -1,4 +1,5 @@
-_pycache_
+_pycache_/
 config.json
 sales_ETl/
 SpotifyETL/
+Project Components Prototypes/
