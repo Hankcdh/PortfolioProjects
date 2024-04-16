@@ -1,10 +1,12 @@
 
-from sqlalchemy import create_engine
-from sqlalchemy import URL
+from sqlalchemy import create_engine , text
 import requests
 import json
 import pandas as pd
-
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.orm import Session
+from loguru import logger
+from sqlalchemy import insert
 
 def Extract_API_JSON(url):
     """
@@ -74,8 +76,75 @@ def Extract_API_JSON(url):
 
 
 def stage_data_into_pandas(json_data):
-    df = pd.read_json(json_data)
-    return df
+    df_staged = pd.read_json(json_data)
+    return df_staged
 
 def Transform_data_into_DW_Schema(df):
-    return None
+    df_prodDim = df[['SKU_Number' , 'Product_Description' , 'Brand_Description']]
+    df_cashierDim = df[['Cashier_Employee_ID' , 'Cashier_Name']]
+    df_retailsaleFact = df.drop(columns = ['Product_Description',  'Brand_Description','Cashier_Employee_ID' ])
+    return df_prodDim , df_retailsaleFact , df_cashierDim
+
+def ingest_data_into_productDim(df_data , postsql_con_config):
+    conn_string = f'postgresql://{postsql_con_config["DB_USER"]}:{postsql_con_config["DB_PASS"]}@{postsql_con_config["DB_HOST"]}:{postsql_con_config["DB_PORT"]}/{postsql_con_config["DB_NAME"]}'
+
+    try:
+        # Connection Establishment
+        SQLAlchemy_engine = create_engine(conn_string)
+        session = Session(SQLAlchemy_engine)
+        print("Database connected successfully")
+
+        # SQL Query Execution
+        # for index, row in df_data.iterrows():
+        #     #sql_query = f"INSERT INTO productdim (sku_number,product_description,brand_description) VALUES ({row['SKU_Number']}, {row['Product_Description']},{row['Brand_Description']})"
+        #     #session.execute(text("INSERT INTO productdim (sku_number,product_description,brand_description) values(?,?,?)", row.SKU_Number, row.Product_Description, row.Brand_Description))
+
+        
+        # session.commit()
+        session.new
+        print(session.new)
+        print("PostgreSQL Command successfully")
+
+    except SQLAlchemyError as err:
+        # Specific SQLAlchemyError for better exception handling
+        print(f"SQLAlchemyError: {err}")
+        session.rollback()
+
+    except Exception as err:
+        # Generic exception block for unexpected errors
+        print(f"Unexpected Error: {err}")
+        session.rollback()
+
+    finally:
+        # Connection Cleanup
+        session.close()
+
+
+   
+
+def Load_data_into_DW_Schema(df_prodDim, df_cashierDim , df_retailsaleFact,Conn_Config):
+    #Loading Dimension Table
+    try:
+        ingest_data_into_productDim(df_prodDim, Conn_Config)
+    except Exception as err:
+        print(err)
+    
+
+
+#Test Case 
+with open('config.json') as config_file:
+    config_data = json.load(config_file)
+    postsql_con_config = {"DB_NAME" : config_data["postsql_con_SITDB_Hank"]["DB_NAME"],
+                        "DB_USER" : config_data["postsql_con_SITDB_Hank"]["DB_USER"],
+                        "DB_PASS" : config_data["postsql_con_SITDB_Hank"]["DB_PASS"],
+                        "DB_HOST" : config_data["postsql_con_SITDB_Hank"]["DB_HOST"],
+                        "DB_PORT" : config_data["postsql_con_SITDB_Hank"]["DB_PORT"] }
+    url = config_data["Mockaroo_API"]["Sales_Schema1"]
+
+json_data = Extract_API_JSON(url)
+df_staged = stage_data_into_pandas(json_data)
+logger.debug("Data Staged Completed")
+df_prodDim , df_retailsaleFact , df_cashierDim = Transform_data_into_DW_Schema(df_staged)
+logger.debug("Data Transformation Completed")
+#print(df_prodDim , df_retailsaleFact , df_cashierDim)
+Load_data_into_DW_Schema(df_prodDim , df_retailsaleFact , df_cashierDim,postsql_con_config)

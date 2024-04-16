@@ -1,0 +1,28 @@
+2024-01-19 13:50:14.829 | DEBUG    | __main__:<module>:5 - A debug message.
+2024-01-19 13:50:14.830 | DEBUG    | __main__:<module>:8 - This is a debug message
+2024-01-19 13:50:14.830 | INFO     | __main__:<module>:9 - This is an info message.
+2024-01-19 13:50:14.830 | SUCCESS  | __main__:<module>:10 - This is a success message.
+2024-01-19 13:50:14.831 | WARNING  | __main__:<module>:11 - This is a warning message.
+2024-01-19 13:50:14.831 | ERROR    | __main__:<module>:12 - This is an error message.
+2024-01-19 13:50:14.831 | CRITICAL | __main__:<module>:13 - This is a critical message.
+2024-01-19 13:50:40.099 | DEBUG    | __main__:<module>:5 - A debug message.
+2024-01-19 13:50:40.100 | DEBUG    | __main__:<module>:8 - This is a debug message
+2024-01-19 13:50:40.100 | INFO     | __main__:<module>:9 - This is an info message.
+2024-01-19 13:50:40.100 | SUCCESS  | __main__:<module>:10 - This is a success message.
+2024-01-19 13:50:40.101 | WARNING  | __main__:<module>:11 - This is a warning message.
+2024-01-19 13:50:40.101 | ERROR    | __main__:<module>:12 - This is an error message.
+2024-01-19 13:50:40.101 | CRITICAL | __main__:<module>:13 - This is a critical message.
+2024-01-19 13:50:46.073 | DEBUG    | __main__:<module>:5 - A debug message.
+2024-01-19 13:50:46.074 | DEBUG    | __main__:<module>:8 - This is a debug message
+2024-01-19 13:50:46.074 | INFO     | __main__:<module>:9 - This is an info message.
+2024-01-19 13:50:46.075 | SUCCESS  | __main__:<module>:10 - This is a success message.
+2024-01-19 13:50:46.075 | WARNING  | __main__:<module>:11 - This is a warning message.
+2024-01-19 13:50:46.075 | ERROR    | __main__:<module>:12 - This is an error message.
+2024-01-19 13:50:46.076 | CRITICAL | __main__:<module>:13 - This is a critical message.
+2024-01-19 13:51:13.971 | DEBUG    | __main__:<module>:5 - A debug message.
+2024-01-19 13:51:13.972 | DEBUG    | __main__:<module>:8 - This is a debug message
+2024-01-19 13:51:13.972 | INFO     | __main__:<module>:9 - This is an info message.
+2024-01-19 13:51:13.973 | SUCCESS  | __main__:<module>:10 - This is a success message.
+2024-01-19 13:51:13.973 | WARNING  | __main__:<module>:11 - This is a warning message.
+2024-01-19 13:51:13.973 | ERROR    | __main__:<module>:12 - This is an error message.
+2024-01-19 13:51:13.974 | CRITICAL | __main__:<module>:13 - This is a critical message.

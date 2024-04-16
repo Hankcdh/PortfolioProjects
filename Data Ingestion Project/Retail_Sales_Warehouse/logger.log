@@ -1,0 +1,39 @@
+2024-01-19 14:50:13.459 | DEBUG    | __main__:<module>:14 - Configuration Setting Initiated
+2024-01-19 14:50:13.460 | DEBUG    | __main__:<module>:24 - Configuration Setting Completed
+2024-01-19 14:50:13.460 | DEBUG    | __main__:<module>:27 - Deploy Data Warehouse Model Initiated
+2024-01-19 14:50:13.627 | DEBUG    | __main__:<module>:33 - Deploy Data Warehouse Model Completed
+2024-01-19 14:50:13.628 | DEBUG    | __main__:<module>:35 - ETL Process Initiated
+2024-01-19 14:50:13.628 | DEBUG    | __main__:<module>:36 - Starting ETL Process .....
+2024-01-19 14:50:14.692 | DEBUG    | __main__:<module>:40 - ETL Process Completed
+2024-01-19 14:52:14.822 | DEBUG    | __main__:<module>:14 - Configuration Setting Initiated
+2024-01-19 14:52:14.823 | DEBUG    | __main__:<module>:24 - Configuration Setting Completed
+2024-01-19 14:52:14.823 | DEBUG    | __main__:<module>:27 - Deploy Data Warehouse Model Initiated
+2024-01-19 14:52:14.932 | DEBUG    | __main__:<module>:33 - Deploy Data Warehouse Model Completed
+2024-01-19 14:52:14.932 | DEBUG    | __main__:<module>:35 - ETL Process Initiated
+2024-01-19 14:52:14.933 | DEBUG    | __main__:<module>:36 - Starting ETL Process .....
+2024-01-19 14:52:15.990 | DEBUG    | __main__:<module>:40 - ETL Process Completed
+2024-01-19 14:55:19.283 | DEBUG    | __main__:<module>:14 - Configuration Setting Initiated
+2024-01-19 14:55:19.285 | DEBUG    | __main__:<module>:24 - Configuration Setting Completed
+2024-01-19 14:55:19.285 | DEBUG    | __main__:<module>:27 - Deploy Data Warehouse Model Initiated
+2024-01-19 14:55:19.417 | DEBUG    | __main__:<module>:33 - Deploy Data Warehouse Model Completed
+2024-01-19 14:55:19.417 | DEBUG    | __main__:<module>:35 - ETL Process Initiated
+2024-01-19 14:55:19.418 | DEBUG    | __main__:<module>:36 - Starting ETL Process .....
+2024-01-19 14:55:20.479 | DEBUG    | __main__:<module>:40 - ETL Process Completed
+2024-01-19 16:13:25.981 | DEBUG    | Components.ETL_to_Psql_DW:<module>:139 - Data Staged Completed
+2024-01-19 16:13:25.986 | DEBUG    | Components.ETL_to_Psql_DW:<module>:141 - Data Transformation Completed
+2024-01-19 16:13:26.095 | DEBUG    | __main__:<module>:14 - Configuration Setting Initiated
+2024-01-19 16:13:26.095 | DEBUG    | __main__:<module>:24 - Configuration Setting Completed
+2024-01-19 16:13:26.096 | DEBUG    | __main__:<module>:27 - Deploy Data Warehouse Model Initiated
+2024-01-19 16:13:26.151 | DEBUG    | __main__:<module>:33 - Deploy Data Warehouse Model Completed
+2024-01-19 16:13:26.151 | DEBUG    | __main__:<module>:35 - ETL Process Initiated
+2024-01-19 16:13:26.152 | DEBUG    | __main__:<module>:36 - Starting ETL Process .....
+2024-01-19 16:13:26.855 | DEBUG    | __main__:<module>:40 - ETL Process Completed
+2024-01-19 16:43:14.804 | DEBUG    | Components.ETL_to_Psql_DW:<module>:142 - Data Staged Completed
+2024-01-19 16:43:14.808 | DEBUG    | Components.ETL_to_Psql_DW:<module>:144 - Data Transformation Completed
+2024-01-19 16:43:14.900 | DEBUG    | __main__:<module>:14 - Configuration Setting Initiated
+2024-01-19 16:43:14.900 | DEBUG    | __main__:<module>:24 - Configuration Setting Completed
+2024-01-19 16:43:14.900 | DEBUG    | __main__:<module>:27 - Deploy Data Warehouse Model Initiated
+2024-01-19 16:43:14.958 | DEBUG    | __main__:<module>:33 - Deploy Data Warehouse Model Completed
+2024-01-19 16:43:14.959 | DEBUG    | __main__:<module>:35 - ETL Process Initiated
+2024-01-19 16:43:14.959 | DEBUG    | __main__:<module>:36 - Starting ETL Process .....
+2024-01-19 16:43:15.749 | DEBUG    | __main__:<module>:40 - ETL Process Completed

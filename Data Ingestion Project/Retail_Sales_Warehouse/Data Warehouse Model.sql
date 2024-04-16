@@ -20,8 +20,8 @@ CREATE TABLE RetailSalesFacts(
 CREATE TABLE ProductDim(
     Product_key SERIAL PRIMARY KEY,
     SKU_Number VARCHAR(10),
-    Product_Description VARCHAR(20),
-    Brand_Description VARCHAR(20)
+    Product_Description VARCHAR(100),
+    Brand_Description VARCHAR(100)
 );
 
 -- Cashier Dimension Table
